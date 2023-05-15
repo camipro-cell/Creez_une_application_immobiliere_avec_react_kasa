@@ -13,7 +13,7 @@ function Root() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/logement" element={<Lodging />} />
+            <Route path="/logement/:id" element={<Lodging />} />
             <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

@@ -1,0 +1,24 @@
+.cards_in_gallery {
+    position: relative;
+    width: 28%;
+    height: 340px;
+    padding-bottom: 50px;
+}
+
+.cards_in_gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter : brightness(75%);
+}
+
+.cards_in_gallery h3 {
+    text-decoration: none;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+    color: #FFFFFF;
+    margin-top: -60px;
+    padding-left: 15px;
+    width: 90%;
+}

@@ -1,5 +1,6 @@
 .space_top_main_in_banner {
     padding-top: 60px;
+    padding-bottom: 45px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -7,7 +8,7 @@
 
 .title_banner {
     position: absolute;
-    color: blue;
+    color: #FFFFFF;
     font-weight: 500;
     font-size: 48px;
     z-index: 1;
