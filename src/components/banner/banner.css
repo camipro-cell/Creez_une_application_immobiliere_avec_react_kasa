@@ -1,0 +1,23 @@
+.space_top_main_in_banner {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title_banner {
+    position: absolute;
+    color: blue;
+    font-weight: 500;
+    font-size: 48px;
+    z-index: 1;
+    padding-top: 78px;
+}
+
+.img_banner {
+    width: 100%;
+    height: 223px;
+    border-radius: 25px;
+    object-fit: cover;
+    filter : brightness(60%);
+}

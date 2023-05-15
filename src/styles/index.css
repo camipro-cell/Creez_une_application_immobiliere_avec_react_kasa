@@ -1,8 +1,18 @@
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Montserrat', sans-serif;
 }
+
+main {
+  padding: 0 100px;
+}
+
 
 

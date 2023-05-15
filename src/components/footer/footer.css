@@ -1,5 +1,22 @@
 footer {
-    width: 100%;
+    width: auto;
     height: 210px;
     background-color: #000000;
+    margin-top: 500px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;  
+}
+
+footer img {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
 }

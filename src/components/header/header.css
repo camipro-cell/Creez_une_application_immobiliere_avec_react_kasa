@@ -18,4 +18,9 @@ header li {
 header a {
     text-decoration: none;
     color: #FF6060;
+    font-size: 24px;
+}
+
+.space_nav_about {
+    padding-left: 60px;
 }
