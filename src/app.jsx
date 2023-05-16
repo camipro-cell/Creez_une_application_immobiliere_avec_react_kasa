@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from '../pages/home/home';
-import About from '../pages/about/about';
-import Lodging from '../pages/lodging/lodging';
-import Error from '../pages/404/404';
-import Header from "./header/header";
-import Footer from './footer/footer';
+import Home from './pages/home/home';
+import About from './pages/about/about';
+import Lodging from './pages/lodging/lodging';
+import Error from './pages/404/404';
+import Header from "./components/header/header";
+import Footer from './components/footer/footer';
 
-function Root() {
+function App() {
     return ( 
     <BrowserRouter>
         <header>
@@ -26,4 +26,4 @@ function Root() {
     );
 };
 
-export default Root;
+export default App;
