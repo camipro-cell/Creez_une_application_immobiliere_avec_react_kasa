@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../pages/home/home';
 import About from '../pages/about/about';
@@ -9,14 +10,18 @@ import Footer from './footer/footer';
 function Root() {
     return ( 
     <BrowserRouter>
-        <Header />
+        <header>
+            <Header />
+        </header>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/logement/:id" element={<Lodging />} />
             <Route path="*" element={<Error />} />
         </Routes>
-        <Footer />
+        <footer>
+            <Footer />
+        </footer>
     </BrowserRouter> 
     );
 };

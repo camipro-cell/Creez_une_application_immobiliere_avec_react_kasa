@@ -1,4 +1,5 @@
-import './lodgingcard.css';
+import React from 'react';
+import './lodgingcards.css';
 import { Link } from 'react-router-dom';
 
 function LodgingCard(props) {

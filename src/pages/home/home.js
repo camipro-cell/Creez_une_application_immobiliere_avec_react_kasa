@@ -1,3 +1,4 @@
+import React from 'react';
 import Banner from "../../components/banner/banner";
 import Gallery from "../../components/gallery/gallery";
 
@@ -5,8 +6,12 @@ import Gallery from "../../components/gallery/gallery";
 function Home() {
     return (
     <main>
-        <Banner />
-        <Gallery />
+        <section>
+            <Banner />
+        </section>
+        <section>
+            <Gallery />
+        </section>
      
     </main>   
     ); 

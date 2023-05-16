@@ -1,10 +1,11 @@
+import React from 'react';
 import './gallery.css';
-import LodgingCard from '../../components/lodgingcard/lodgingcard';
+import LodgingCard from '../../components/lodgingcards/lodgingcards';
 import datas from '../../data/data'
 
 function Gallery() {
     return (
-        <section className='gallery'>
+        <div className='gallery'>
             {datas.map((data) => {
                 return (
                     <LodgingCard 
@@ -17,7 +18,7 @@ function Gallery() {
               }
              )
             }
-        </section>
+        </div>
     );
 };
 

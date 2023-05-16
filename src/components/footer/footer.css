@@ -1,21 +1,21 @@
-footer {
+.footer_style {
     width: auto;
     height: 210px;
     background-color: #000000;
     margin-top: 100px;
 }
 
-footer div {
+.footer_style div {
     display: flex;
     justify-content: center;  
 }
 
-footer img {
+.footer_style img {
     padding-top: 65px;
     padding-bottom: 30px;
 }
 
-footer p {
+.footer_style p {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 24px;
