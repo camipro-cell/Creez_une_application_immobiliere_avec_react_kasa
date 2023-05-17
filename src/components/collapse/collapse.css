@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.collapse_drop_down_list h3:hover {
+    cursor: pointer;
+}
+
 .collapse_drop_down_list img {
     height: 13px;
     padding: 15px 0;
