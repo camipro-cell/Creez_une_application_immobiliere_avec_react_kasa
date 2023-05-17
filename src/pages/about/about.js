@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../../components/banner/banner';
 import Collapse from '../../components/collapse/collapse';
-import datasCollapse from '../../data/datacollapse'
+import datasAboutCollapse from '../../data/datacollapse'
 
 function About() {
    return (
@@ -10,12 +10,12 @@ function About() {
             <Banner />
          </section>
          <section>
-            {datasCollapse.map((data) => {
+            {datasAboutCollapse.map((data) => {
 					return (
 						<div key={data.id}>
 							<Collapse 
                         title={data.title} 
-                        description={data.content} 
+                        description={data.description} 
                      />
 						</div>
 					);

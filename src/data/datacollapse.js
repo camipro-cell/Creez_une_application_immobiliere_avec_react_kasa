@@ -1,4 +1,4 @@
-const datasCollapse = [
+const datasAboutCollapse = [
 	{    
         "id": "1",
 		"title": "Fiabilité",
@@ -13,7 +13,7 @@ const datasCollapse = [
 
     {
         "id": "3",
-        "tiltle": "Service",
+        "title": "Service",
         "description": "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
     },
 
@@ -24,4 +24,4 @@ const datasCollapse = [
     }
 ]
 
-export default datasCollapse;
+export default datasAboutCollapse;
