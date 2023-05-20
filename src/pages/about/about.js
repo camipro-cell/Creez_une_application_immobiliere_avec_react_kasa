@@ -14,6 +14,7 @@ function About() {
 					return (
 						<div key={data.id}>
 							<Collapse 
+                        id={data.id}
                         title={data.title} 
                         description={data.description} 
                      />

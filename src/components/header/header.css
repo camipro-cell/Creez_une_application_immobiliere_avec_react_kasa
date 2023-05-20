@@ -24,3 +24,8 @@
 .space_nav_link_about {
     padding-left: 60px;
 }
+
+nav .active {
+    text-decoration: underline;
+
+}

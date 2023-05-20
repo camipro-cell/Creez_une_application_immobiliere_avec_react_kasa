@@ -33,6 +33,18 @@
     color: #FF6060;
 }
 
+.arrow {
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow_to_open {
+    transform: rotate(0deg);
+}
+
+.arrow_to_close {
+    transform: rotate(180deg);
+}
+
 
 
 

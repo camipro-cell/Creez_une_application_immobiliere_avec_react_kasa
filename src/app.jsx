@@ -10,18 +10,14 @@ import Footer from './components/footer/footer';
 function App() {
     return ( 
     <BrowserRouter>
-        <header>
             <Header />
-        </header>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/logement/:id" element={<Lodging />} />
             <Route path="*" element={<Error />} />
         </Routes>
-        <footer>
             <Footer />
-        </footer>
     </BrowserRouter> 
     );
 };
