@@ -1,0 +1,62 @@
+.lodging_title_in_lodging_page, .location_of_lodging, .host_informations p {
+    color: #FF6060;
+    font-weight: 500;
+}
+
+.lodging_title_in_lodging_page {
+    padding-top: 30px;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.location_of_lodging {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.position_tag_and_host_picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.position_tag_and_host_picture button {
+    background-color: #FF6060;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 135px;
+    height: 27px;
+    padding: 0;
+    margin: 20px 10px 0 0;
+}
+
+.host_informations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.host_informations p {
+   font-size: 18px;
+   line-height: 26px;
+   width: 50%;
+}
+
+.host_informations img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.star_style {
+    padding-bottom: 40px;
+}
+
+
+

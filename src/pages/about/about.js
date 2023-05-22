@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../../components/banner/banner';
 import Collapse from '../../components/collapse/collapse';
-import datasAboutCollapse from '../../data/datacollapse'
+import datasAboutCollapse from '../../data/datacollapse';
 
 function About() {
    return (
@@ -16,7 +16,7 @@ function About() {
 							<Collapse 
                         id={data.id}
                         title={data.title} 
-                        description={data.description} 
+                        content={data.description} 
                      />
 						</div>
 					);

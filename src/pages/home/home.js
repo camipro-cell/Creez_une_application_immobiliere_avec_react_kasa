@@ -2,7 +2,6 @@ import React from 'react';
 import Banner from "../../components/banner/banner";
 import Gallery from "../../components/gallery/gallery";
 
-
 function Home() {
     return (
     <main>
@@ -12,7 +11,6 @@ function Home() {
         <section>
             <Gallery />
         </section>
-     
     </main>   
     ); 
 };
