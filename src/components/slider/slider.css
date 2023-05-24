@@ -1,0 +1,30 @@
+.style_of_background_image {
+    height: 415px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.arrow_position_to_switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.counter {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.arrow_previous {
+    padding-left: 23px;
+}
+
+.arrow_next {
+    padding-right: 23px;
+}
+
+.arrow_next, .arrow_previous {
+    cursor: pointer;
+}

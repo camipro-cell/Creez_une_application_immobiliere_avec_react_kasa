@@ -1,3 +1,5 @@
+/* All collapse */
+
 .collapse_drop_down_list {
     margin: 30px 100px 0 100px;
 }
@@ -23,7 +25,7 @@
     padding: 15px 0;
 }
 
-.collapse_drop_down_list p {
+.content_in_collapse {
     padding: 25px 42px 20px 20px;
     border: transparent;
     background-color:  #F7F7F7;
@@ -32,6 +34,8 @@
     font-size: 24px;
     color: #FF6060;
 }
+
+/* Arrow in collapse in about page */
 
 .arrow {
     transition: all 0.2s ease-in-out;
@@ -45,6 +49,27 @@
     transform: rotate(180deg);
 }
 
+/* Collapse in lodging page */
 
+.style_collapse_in_lodging_page  {
+    display: flex;
+    justify-content: space-between;
+}
 
+.style_collapse_in_lodging_page .collapse_drop_down_list {
+    margin: 0;
+    width: 47%;
+   
+}
+
+.style_collapse_equipments {
+    margin-left: 80px;
+}
+
+.style_collapse_in_lodging_page .content_in_collapse {
+    height: 249px;
+}
+.details_equipments {
+    padding-bottom: 5px;
+}
 
