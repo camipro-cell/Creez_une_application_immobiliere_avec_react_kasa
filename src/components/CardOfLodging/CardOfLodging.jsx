@@ -1,8 +1,8 @@
 import React from 'react';
-import './lodgingcards.css';
+import './CardOfLodging.css';
 import { Link } from 'react-router-dom';
 
-function LodgingCard(props) {
+function CardOfLodging(props) {
     return (
             <article className='cards_in_gallery'>
                 <Link to={`/logement/${props.id}`}>
@@ -13,4 +13,4 @@ function LodgingCard(props) {
     );
 };
 
-export default LodgingCard;
+export default CardOfLodging;

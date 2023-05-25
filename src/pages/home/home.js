@@ -1,15 +1,19 @@
 import React from 'react';
-import Banner from "../../components/banner/banner";
-import Gallery from "../../components/gallery/gallery";
+import Banner from "../../components/Banner/Banner";
+import image from '../../assets/imgbannerhome.png'
+import LodgingList from "../../components/LodgingList/LodgingList";
 
 function Home() {
     return (
     <main>
         <section>
-            <Banner />
+            <Banner 
+            title={'Chez vous, partout et ailleurs'}
+            image={image}
+            />
         </section>
         <section>
-            <Gallery />
+            <LodgingList />
         </section>
     </main>   
     ); 

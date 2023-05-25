@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from './pages/home/home';
-import About from './pages/about/about';
-import Lodging from './pages/lodging/lodging';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Lodging from './pages/Lodging/Lodging';
 import Error from './pages/404/404';
-import Header from "./components/header/header";
-import Footer from './components/footer/footer';
+import Header from "./components/Header/Header";
+import Footer from './components/Footer/Footer';
 
 function App() {
     return ( 

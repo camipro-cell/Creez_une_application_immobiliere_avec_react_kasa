@@ -1,14 +1,47 @@
-.gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    padding: 60px 20px;
+.slider {
+	position: relative;
+	overflow:hidden;
+	height: 415px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.slider-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	max-width: 100%;
+	height: auto;
+}
+.slider-item-show {
+	opacity: 1;  
 }
 
+.arrow_position_to_switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 150px;
+	position: absolute;
+	width: 100%;
+}
 
+.counter {
+    position: absolute;
+    color: #FFFFFF;
+    padding-top: 230px;
+}
 
+.arrow_previous {
+    padding-left: 23px;
+}
+
+.arrow_next {
+    padding-right: 23px;
+}
+
+.arrow_next, .arrow_previous {
+    cursor: pointer;
+}
 
 
