@@ -35,7 +35,7 @@
     margin-bottom: 25px;
 }
 
-.host_informations  {
+.host_informations {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,7 +45,7 @@
 .host_informations p {
    font-size: 18px;
    line-height: 26px;
-   width: 55%;
+   text-align: center;
 }
 
 .host_informations img {
@@ -54,7 +54,6 @@
     width: 64px;
     height: 64px;
     margin-left: 5px;
-    
 }
 
 .star_style {

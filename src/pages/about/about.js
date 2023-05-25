@@ -31,10 +31,9 @@ function About() {
 				/>
 			</section>
 			<section>
-				{ aboutData && aboutData.length > 0 && aboutData.map((data, index) =>
+				{aboutData && aboutData.length > 0 && aboutData.map((data, index) =>
 					<div key={index}>
 						<Collapse
-							id={index}
 							title={data.title}
 							content={data.content}
 						/>

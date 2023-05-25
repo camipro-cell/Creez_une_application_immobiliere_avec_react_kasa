@@ -1,3 +1,4 @@
+import React from 'react';
 import './Gallery.css'; 
 import { useState } from "react";
 import arrowprevious from '../../assets/arrowprevious.png';
@@ -25,9 +26,9 @@ function Gallery(props) {
 
 	return (
 		<div className="slider">
-			{props.pictures && props.pictures.length > 0 && props.pictures.map((picture, index) =>
-				<div>
-					<img key={index} className={(index === slideIndex) ? `slider-item slider-item-${index} slider-item-show` : `slider-item slider-item-${index}`} src={picture} alt='test'/>
+			{props.pictures && props.pictures.length > 0 && props.pictures.map((picture, index) => 
+				<div key={index}>
+					<img className={(index === slideIndex) ? `slider-item slider-item-${index} slider-item-show` : `slider-item slider-item-${index}`} src={picture} alt={props.title} title={props.title}/>
 					{props.pictures.length > 1 && (
 							<div>
 								<div className='arrow_position_to_switch'>

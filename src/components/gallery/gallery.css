@@ -26,12 +26,6 @@
 	width: 100%;
 }
 
-.counter {
-    position: absolute;
-    color: #FFFFFF;
-    padding-top: 230px;
-}
-
 .arrow_previous {
     padding-left: 23px;
 }
@@ -44,4 +38,8 @@
     cursor: pointer;
 }
 
-
+.counter {
+    position: absolute;
+    color: #FFFFFF;
+    padding-top: 230px;
+}

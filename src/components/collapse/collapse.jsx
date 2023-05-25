@@ -5,8 +5,9 @@ import arrowopen from '../../assets/arrowopen.png';
 
 function Collapse(props) {
     
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(props.open !== undefined ? props.open: false);
     const handleClick = () => {
+      if (props.open === undefined)
       setIsOpen(!isOpen);
     };
    
@@ -14,8 +15,7 @@ function Collapse(props) {
         <div className='collapse_drop_down_list'>
           <h3 onClick={handleClick}>
             {props.title}
-            <img
-              className={isOpen ? 'arrow arrow_to_open' : 'arrow arrow_to_close'}
+            <img className={props.open !== undefined ? props.open ? 'arrow arrow_to_open': 'arrow arrow_to_close': isOpen? 'arrow arrow_to_open': 'arrow arrow_to_close'}
               src={arrowopen}
               alt="show content"
             />
