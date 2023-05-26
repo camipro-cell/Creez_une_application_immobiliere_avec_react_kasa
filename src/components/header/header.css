@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 100px 0;
+    padding: 40px 100px 70px 100px;
 }
 
 .header_style ul {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
+    padding-left: 0;
 }
 
 .header_style li {
@@ -19,6 +20,8 @@
     text-decoration: none;
     color: #FF6060;
     font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
 }
 
 .space_nav_link_about {
@@ -27,5 +30,32 @@
 
 nav .active {
     text-decoration: underline;
+}
 
+@media screen and (max-width: 1150px) {
+    .header_style {
+        padding: 40px 50px 70px 50px;
+    }
+    
+}
+  
+  @media screen and (max-width: 991px) {
+    .header_style {
+      padding: 40px 20px 70px 20px;
+    }
+}
+
+  @media screen and (max-width: 767px) {
+    .header_style {
+      padding: 20px;
+    }
+    .header_style a {
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    .space_nav_link_about {
+        padding-left: 10px;
+    }
+    
 }

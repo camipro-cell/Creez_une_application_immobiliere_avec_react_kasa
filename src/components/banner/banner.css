@@ -6,7 +6,6 @@
 .banner_style {
     position: relative;
     padding-bottom: 45px;
-    padding-top: 60px;
 }
 
 .title_banner {
@@ -28,7 +27,19 @@
     filter : brightness(70%);
 }
 
-
+@media screen and (max-width: 767px) {
+    .banner_style {
+        height: 110px;
+        padding-bottom: 20px;
+    }
+    .title_banner {
+        font-size: 24px;
+        padding-top: 30px;
+        padding-left: 15px;
+        text-align: start;
+        width: 65%;
+    }
+  }
     
 
 

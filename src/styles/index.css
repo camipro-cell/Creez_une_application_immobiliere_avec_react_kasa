@@ -14,5 +14,17 @@ main {
   padding: 0 100px;
 }
 
+@media screen and (max-width: 1150px) {
+  main {
+      padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  main {
+    padding: 0 20px;
+  }
+}
+
 
 

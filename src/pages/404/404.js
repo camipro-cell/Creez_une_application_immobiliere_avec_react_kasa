@@ -10,6 +10,6 @@ function Error() {
             <Link className='link_error' to="/">Retourner sur la page d'accueil</Link>
         </main>
         );
-}
+};
 
 export default Error;

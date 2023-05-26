@@ -42,6 +42,6 @@ function About() {
 			</section>
 		</main>
 	);
-}
+};
 
 export default About;

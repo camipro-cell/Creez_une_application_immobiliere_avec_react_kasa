@@ -21,7 +21,7 @@ function LodgingList() {
 	}, []);
 
 	return (
-		<div className="gallery">
+		<div className="lodging_list">
 			{ lodgings && lodgings.length > 0 && lodgings.map((lodging) =>
 				<CardOfLodging
 					key={lodging.id}

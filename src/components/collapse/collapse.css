@@ -1,15 +1,16 @@
 /* All collapse */
 
 .collapse_drop_down_list {
-    margin: 30px 100px 0 100px;
+    margin: 30px 110px 0 110px;
 }
 
 .collapse_drop_down_list h3 {
     border: 1px solid #FF6060;
     background-color: #FF6060;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 24px;
+    font-weight: 500;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -32,10 +33,11 @@
     border-radius: 5px;
     font-weight: 400;
     font-size: 24px;
+    line-height: 34px;
     color: #FF6060;
 }
 
-/* Arrow in collapse in about page */
+/* Collapse in about page */
 
 .arrow {
     transition: all 0.2s ease-in-out;
@@ -59,7 +61,6 @@
 .style_collapse_in_lodging_page .collapse_drop_down_list {
     margin: 0;
     width: 47%;
-   
 }
 
 .style_collapse_equipments {
@@ -67,9 +68,36 @@
 }
 
 .style_collapse_in_lodging_page .content_in_collapse {
-    height: 249px;
+    min-height: 249px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 10px;
 }
+
+.style_collapse_in_lodging_page h3 {
+    font-size: 18px;
+    border-radius: 10px;
+}
+
 .details_equipments {
     padding-bottom: 5px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    .collapse_drop_down_list {
+        margin: 0 0 20px 0;
+    }
+    .collapse_drop_down_list h3 {
+        font-size: 13px;
+    }
+    .collapse_drop_down_list img {
+        height: 10px;
+        padding: 5px 0;
+    }
+    .content_in_collapse {
+        font-size: 12px;
+        line-height: 17px;
+    }
 }
 

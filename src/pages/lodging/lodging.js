@@ -69,24 +69,22 @@ function Lodging() {
 							<div>
 								<h2 className='lodging_title_in_lodging_page'>{lodging.title}</h2>
 								<p className='location_of_lodging'>{lodging.location}</p>
-								<div className='button_tag_style'>
+							</div>
+							<div className='host_informations'>
+								<div>
+									<p>{lodging.host.name.split(' ')[0]}</p>
+                					<p>{lodging.host.name.split(' ')[1]}</p>
+								</div>
+									<img src={lodging.host.picture} alt="Accommodation host" title="Picture of host" />
+							</div>
+						</div>
+						<div className='button_tag_style'>
 									{lodging.tags && lodging.tags.length > 0 && lodging.tags.map((tag, index) =>
 										<button key={index}>{tag}</button>
 									)}
-								</div>
-							</div>
-							<div>
-								<div className='host_informations'>
-									<div>
-										<p>{lodging.host.name.split(' ')[0]}</p>
-                						<p>{lodging.host.name.split(' ')[1]}</p>
-									</div>
-									<img src={lodging.host.picture} alt="Accommodation host" title="Picture of host" />
-								</div>
-								<div className="stars_of_accommodation">
+						</div>
+						<div className="stars_of_lodging">
 									{ renderStars() }
-								</div>
-							</div>
 						</div>
 						<div className='style_collapse_in_lodging_page'>
 							<Collapse
