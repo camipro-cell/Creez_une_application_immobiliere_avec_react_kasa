@@ -1,5 +1,5 @@
 import React from 'react';
-import './Gallery.css'; 
+import './Gallery1.css'; 
 import { useState } from "react";
 import arrowprevious from '../../assets/arrowprevious.png';
 import arrownext from '../../assets/arrownext.png'
