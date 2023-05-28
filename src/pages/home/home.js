@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from "../../components/Banner/Banner";
+import Banner from "../../components/banner/banner";
 import image from '../../assets/imgbannerhome.png'
 import LodgingList from "../../components/LodgingList/LodgingList";
 

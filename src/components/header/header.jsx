@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './header.css';
 import logo from '../../assets/logokasa.png';
 import { Link, useLocation } from 'react-router-dom';
 

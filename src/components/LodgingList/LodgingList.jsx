@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import './LodgingList.css';
-import CardOfLodging from '../CardOfLodging/CardOfLodging';
+import CardOfLodging from '../Cards/Cards';
 
 function LodgingList() {
 
