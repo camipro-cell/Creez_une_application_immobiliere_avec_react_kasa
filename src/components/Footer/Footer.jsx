@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer1.css'
+import './Footer.css'
 import logo from '../../assets/logofooter.png'
 import { Link } from 'react-router-dom';
 

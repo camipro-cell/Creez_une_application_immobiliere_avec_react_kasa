@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Collapse1.css';
+import './Collapse.css';
 import arrowopen from '../../assets/arrowopen.png';
 
 
