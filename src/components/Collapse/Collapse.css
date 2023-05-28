@@ -55,6 +55,7 @@
 
 .style_collapse_in_lodging_page  {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -71,6 +72,7 @@
     min-height: 249px;
     font-size: 18px;
     line-height: 25px;
+    font-weight: 400;
     border-radius: 10px;
 }
 
@@ -95,9 +97,20 @@
         height: 10px;
         padding: 5px 0;
     }
-    .content_in_collapse {
+    .content_in_collapse, .style_collapse_in_lodging_page .content_in_collapse {
         font-size: 12px;
         line-height: 17px;
+    }
+    .style_collapse_in_lodging_page .content_in_collapse {
+        min-height: 144px;
+    }
+    .style_collapse_in_lodging_page  {
+        display: flex;
+        flex-direction: column;
+    }
+    .style_collapse_in_lodging_page .collapse_drop_down_list {
+        margin-bottom: 20px;
+        width: 100%;
     }
 }
 

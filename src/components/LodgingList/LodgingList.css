@@ -14,7 +14,7 @@
     }
 }
 
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .lodging_list {
         display: flex;
         flex-direction: column;

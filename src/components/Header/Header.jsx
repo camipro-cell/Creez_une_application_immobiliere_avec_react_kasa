@@ -12,12 +12,12 @@ function Header() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+                            <Link to="/" className={location.pathname === '/' ? 'active space_nav_link_home' : ' space_nav_link_home'}>
                                 Accueil
                             </Link>
                         </li>
                         <li>
-                            <Link to="/about" className={location.pathname === '/about' ? 'active space_nav_link_about' : ' space_nav_link_about'}>
+                            <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>
                                 À Propos
                             </Link>
                         </li>

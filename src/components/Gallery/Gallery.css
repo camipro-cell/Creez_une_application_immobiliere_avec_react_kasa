@@ -42,4 +42,26 @@
     position: absolute;
     color: #FFFFFF;
     padding-top: 230px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    .slider {
+       height: 255px;
+       margin-top: 0;
+    }
+    .counter {
+        padding-top: 100px;
+        font-size: 14px;
+    }
+    .arrow_next, .arrow_previous {
+        width: 100%;
+        max-width: 19px;
+    }
+    .arrow_position_to_switch {
+        padding-top: 118px;
+    }
+    
 }

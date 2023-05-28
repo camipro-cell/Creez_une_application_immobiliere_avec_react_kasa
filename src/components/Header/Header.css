@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 40px 100px 70px 100px;
 }
 
@@ -24,8 +25,8 @@
     line-height: 34px;
 }
 
-.space_nav_link_about {
-    padding-left: 60px;
+.space_nav_link_home {
+    padding-right: 60px;
 }
 
 nav .active {
@@ -52,10 +53,14 @@ nav .active {
     .header_style a {
       font-size: 12px;
       line-height: 17px;
+      text-transform: uppercase;
     }
-
-    .space_nav_link_about {
-        padding-left: 10px;
+    .space_nav_link_home {
+        padding-right: 10px;
+    }
+    .header_style img {
+      width: 100%;
+      max-width: 150px;
     }
     
 }
