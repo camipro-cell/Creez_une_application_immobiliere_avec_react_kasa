@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react"
-import './lodging.css'
-import Collapse from '../../components/collapse/collapse';
-import Gallery from '../../components/gallery/gallery';
+import './Lodging.css'
+import Collapse from '../../components/Collapse/Collapse';
+import Gallery from '../../components/Gallery/Gallery';
 import redstar from '../../assets/redstar.png';
 import greystar from '../../assets/greystar.png';
 
