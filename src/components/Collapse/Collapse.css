@@ -37,8 +37,6 @@
     color: #FF6060;
 }
 
-/* Collapse in about page */
-
 .arrow {
     transition: all 0.2s ease-in-out;
 }
@@ -49,41 +47,6 @@
 
 .arrow_to_close {
     transform: rotate(180deg);
-}
-
-/* Collapse in lodging page */
-
-.style_collapse_in_lodging_page  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.style_collapse_in_lodging_page .collapse_drop_down_list {
-    margin: 0;
-    width: 47%;
-}
-
-.style_collapse_equipments {
-    margin-left: 80px;
-}
-
-.style_collapse_in_lodging_page .content_in_collapse {
-    min-height: 249px;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
-    border-radius: 10px;
-}
-
-.style_collapse_in_lodging_page h3 {
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-.details_equipments {
-    padding-bottom: 5px;
-    line-height: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -97,20 +60,10 @@
         height: 10px;
         padding: 5px 0;
     }
-    .content_in_collapse, .style_collapse_in_lodging_page .content_in_collapse {
+    .content_in_collapse {
         font-size: 12px;
         line-height: 17px;
     }
-    .style_collapse_in_lodging_page .content_in_collapse {
-        min-height: 144px;
-    }
-    .style_collapse_in_lodging_page  {
-        display: flex;
-        flex-direction: column;
-    }
-    .style_collapse_in_lodging_page .collapse_drop_down_list {
-        margin-bottom: 20px;
-        width: 100%;
-    }
+    
 }
 

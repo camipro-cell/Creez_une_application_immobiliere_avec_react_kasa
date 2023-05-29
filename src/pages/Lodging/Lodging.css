@@ -1,3 +1,9 @@
+.informations_of_lodging {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .lodging_title_in_lodging_page, .location_of_lodging, .host_informations p {
     color: #FF6060;
     font-weight: 500;
@@ -9,21 +15,16 @@
     line-height: 50px;
 }
 
-.space_beetween_title_and_host_information {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .location_of_lodging {
     font-size: 18px;
     line-height: 26px;
 }
 
 .button_tag_style {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 25px;
 }
+
 .button_tag_style button {
     background-color: #FF6060;
     border-radius: 10px;
@@ -40,8 +41,9 @@
 .host_informations {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 0 30px 0;
+    padding: 25px 0 27px 0;
 }
 
 .host_informations p {
@@ -61,14 +63,51 @@
 .stars_of_lodging {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-top: -60px;
 }
 
 .star_style {
     padding-left: 15px;
-    padding-bottom: 40px;
 }
+
+.stars_of_lodging img:first-child {
+    padding-left: 0;
+}
+
+/* CSS only Collapse component in lodging page */
+
+.style_collapse_in_lodging_page  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.style_collapse_in_lodging_page .collapse_drop_down_list {
+    margin: 0;
+    width: 47%;
+}
+
+.style_collapse_equipments {
+    margin-left: 80px;
+}
+
+.style_collapse_in_lodging_page .content_in_collapse {
+    min-height: 249px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.style_collapse_in_lodging_page h3 {
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.details_equipments {
+    padding-bottom: 5px;
+    line-height: 25px;
+}
+
 
 @media screen and (max-width: 1100px) {
     .space_beetween_title_and_host_information h2 {
@@ -86,6 +125,37 @@
         padding-bottom: 30px;
         padding-right: 7px;
     }
+    .style_collapse_in_lodging_page .content_in_collapse {
+        font-size: 12px;
+        line-height: 17px;
+        min-height: 144px;
+    }
+    .style_collapse_in_lodging_page  {
+        display: flex;
+        flex-direction: column;
+    }
+    .style_collapse_in_lodging_page .collapse_drop_down_list {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .style_collapse_in_lodging_page h3 {
+        font-size: 13px;
+    }
+    .informations_of_lodging {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+    }
+    .host_informations {
+        padding: 0;
+    }
+    .stars_of_lodging {
+        margin-top: -45px;
+    }
+    .button_tag_style button {
+        padding-bottom: 15px;
+    }
+    
 }
 
 

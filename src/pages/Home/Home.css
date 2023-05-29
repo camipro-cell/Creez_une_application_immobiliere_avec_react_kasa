@@ -1,3 +1,4 @@
+/* CSS for placing all lodgings cards in home page */
 .lodging_list {
     display: flex;
     flex-direction: row;
