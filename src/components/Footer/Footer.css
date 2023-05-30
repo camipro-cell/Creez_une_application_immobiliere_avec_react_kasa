@@ -1,21 +1,21 @@
-.footer_style {
+.footer-style {
     width: auto;
-    height: 210px;
+    height: 209px;
     background-color: #000000;
-    margin-top: 100px;
+    margin-top: 170px;
 }
 
-.footer_style div {
+.footer-style div {
     display: flex;
     justify-content: center;  
 }
 
-.footer_style img {
+.footer-style img {
     padding-top: 65px;
     padding-bottom: 30px;
 }
 
-.footer_style p {
+.footer-style p {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 24px;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .footer_style p {
+    .footer-style p {
         font-size: 12px;
         line-height: 17px;
     }

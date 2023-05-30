@@ -1,23 +1,23 @@
-.header_style {
+.header-style {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 40px 100px 70px 100px;
+    padding: 40px 100px 0 100px;
 }
 
-.header_style ul {
+.header-style ul {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
     padding-left: 0;
 }
 
-.header_style li {
+.header-style li {
     list-style: none;
 }
 
-.header_style a {
+.header-style a {
     text-decoration: none;
     color: #FF6060;
     font-size: 24px;
@@ -25,7 +25,7 @@
     line-height: 34px;
 }
 
-.space_nav_link_home {
+.space-nav-link-home {
     padding-right: 60px;
 }
 
@@ -34,31 +34,32 @@ nav .active {
 }
 
 @media screen and (max-width: 1150px) {
-    .header_style {
-        padding: 40px 50px 70px 50px;
+    .header-style {
+        padding: 40px 50px 0 50px;
     }
     
 }
   
   @media screen and (max-width: 991px) {
-    .header_style {
-      padding: 40px 20px 70px 20px;
+    .header-style {
+      padding: 40px 20px 0 20px;
     }
 }
 
   @media screen and (max-width: 767px) {
-    .header_style {
-      padding: 20px;
+    .header-style {
+      padding: 20px 20px 0 20px;
     }
-    .header_style a {
+    .header-style a {
       font-size: 12px;
       line-height: 17px;
       text-transform: uppercase;
     }
-    .space_nav_link_home {
+    .space-nav-link-home {
         padding-right: 10px;
+        padding-left: 5px;
     }
-    .header_style img {
+    .header-style img {
       width: 100%;
       max-width: 150px;
     }

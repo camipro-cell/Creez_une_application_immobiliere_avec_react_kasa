@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Cards(props) {
     return (
-            <article className='cards_in_gallery'>
+            <article className='cards-in-home-page'>
                 <Link to={`/logement/${props.id}`}>
                     <img src={props.cover} alt={props.title} title={props.title} />
                     <h3>{props.title}</h3>

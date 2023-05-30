@@ -22,27 +22,29 @@ function Home() {
 	}, []);
     
     return (
-    <main>
-        <section>
-            <Banner 
-            title={'Chez vous, partout et ailleurs'}
-            image={image}
-            />
-        </section>
-        <section>
-            <div className="lodging_list">
-                {lodgings && lodgings.length > 0 && lodgings.map((lodging) =>
-				        <Cards
-					        key={lodging.id}
-					        id={lodging.id}
-					        title={lodging.title}
-					        cover={lodging.cover}
-				        />
-			        )
-                }
-            </div>
-		</section>
-    </main>   
+    	<main>
+        	<section>
+				<div className='banner-style-in-home-page'>
+            		<Banner 
+            			title={'Chez vous, partout et ailleurs'}
+            			image={image}
+            		/>
+				</div>
+        	</section>
+        	<section>
+            	<div className="lodging-list">
+                	{lodgings && lodgings.length > 0 && lodgings.map((lodging) =>
+				        	<Cards
+					        	key={lodging.id}
+					        	id={lodging.id}
+					        	title={lodging.title}
+					        	cover={lodging.cover}
+				        	/>
+			        	)
+                	}
+            	</div>
+			</section>
+    	</main>   
     ); 
 };
 

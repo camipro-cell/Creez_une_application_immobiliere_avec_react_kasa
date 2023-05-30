@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
+import './About.css';
 import image from '../../assets/imgbannerabout.png'
 import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
@@ -26,13 +27,15 @@ function About() {
 	return (
 		<main>
 			<section>
-				<Banner 
-				image={image}
-				/>
+				<div className='banner-style-in-about-page'>
+					<Banner 
+						image={image}
+					/>
+				</div>
 			</section>
 			<section>
 				{aboutData && aboutData.length > 0 && aboutData.map((data, index) =>
-					<div key={index}>
+					<div className='style-collapse-in-about-page' key={index}>
 						<Collapse
 							title={data.title}
 							content={data.content}

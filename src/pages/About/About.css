@@ -1,0 +1,53 @@
+.banner-style-in-about-page {
+    padding-top: 45px;
+}
+
+/* CSS only Collapse component in about page */
+.style-collapse-in-about-page .collapse-drop-down-list {
+    margin: 30px 110px 0 110px;
+}
+
+.style-collapse-in-about-page h3, .style-collapse-in-about-page .content-in-collapse {
+    font-size: 24px;
+    line-height: 34px;
+    border-radius: 5px;
+}
+
+.style-collapse-in-about-page h3 {
+    padding-right: 33px;
+}
+
+.style-collapse-in-about-page img {
+    padding: 16px 0;
+}
+.style-collapse-in-about-page .content-in-collapse {
+    padding: 27px 27px 20px 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-style-in-about-page {
+        padding-top: 17px;
+        padding-bottom: 19px;
+    }
+    .banner-style-in-about-page .banner-style img {
+        border-radius: 10px;
+    }
+    .style-collapse-in-about-page .collapse-drop-down-list {
+        margin: 0 0 20px 0;
+    }
+    .style-collapse-in-about-page h3 {
+        font-size: 13px;
+        line-height: 18px;
+        padding-right: 8px;
+    }
+    .style-collapse-in-about-page .content-in-collapse {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .style-collapse-in-about-page img {
+        padding: 10px 0 11px 0;
+    }
+    .style-collapse-in-about-page .content-in-collapse {
+        padding: 17px 7px 53px 11px;
+    }
+}

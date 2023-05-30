@@ -42,7 +42,6 @@ function Lodging() {
 			const starImage = i <= lodging.rating ? redstar : greystar;
 			stars.push(
 				<img
-					className='star_style'
 					key={i}
 					src={starImage}
 					alt="Lodging of rating"
@@ -79,15 +78,15 @@ function Lodging() {
 								picture={lodging.host.picture} 
 								rating={renderStars()}
 							/>
-							<div className='style_collapse_in_lodging_page'>
-								<Collapse
+							<div className='style-collapse-in-lodging-page'>
+								<Collapse 
 									title={'Description'}
 									content={lodging.description}
 								/>
-								<Collapse className='style_collapse_equipments'
+								<Collapse 
 									title={'Équipements'}
 									content={lodging.equipments && lodging.equipments.length > 0 && lodging.equipments.map((equipment, index) => (
-												<div className='details_equipments' key={index}>{equipment}</div>
+												<div className='details-equipments' key={index}>{equipment}</div>
 											)
 										)
 									}

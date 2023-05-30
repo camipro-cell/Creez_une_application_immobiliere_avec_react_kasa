@@ -1,43 +1,47 @@
-.title_error, .p_error, .link_error {
+.title-error, .p-error, .link-error {
     text-align: center;
     color: #FF6060;
 }
 
-.title_error {
+.title-error {
     font-weight: 700;
-    font-size: 290px;
+    font-size: 288px;
     line-height: 410px;
     padding-top: 170px;
 }
 
-.p_error {
+.p-error {
     font-weight: 500;
     font-size: 36px;
-    padding: 30px 30px 0 30px;
     line-height: 51px;
 }
 
-.link_error {
+.link-error {
     display: block;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    padding-top: 180px;
+    padding-top: 182px;
 }
 
 @media screen and (max-width: 767px) {
-    .title_error {
+    .title-error {
         font-size: 96px;
         line-height: 136px;
+        padding-top: 195px;
     }
-    .p_error {
+    .p-error {
         font-size: 18px;
         padding-top: 10px;
         line-height: 25px;
     }
-    .link_error {
+    .p-error span {
+        display: flex;
+        flex-direction: column;
+    }
+    .link-error {
         font-size: 14px;
-        padding-top: 130px;
         line-height: 19px;
+        padding-top: 133px;
     }
 }

@@ -31,9 +31,9 @@ function Gallery(props) {
 					<img className={(index === slideIndex) ? `slider-item slider-item-${index} slider-item-show` : `slider-item slider-item-${index}`} src={picture} alt={props.title} title={props.title}/>
 					{props.pictures.length > 1 && (
 							<div>
-								<div className='arrow_position_to_switch'>
+								<div className='arrow-position-to-switch'>
 									<img
-										className='arrow_previous'
+										className='arrow-previous'
 										src={arrowprevious}
 										alt="previous visual"
 										onClick={prevSlide}
@@ -42,7 +42,7 @@ function Gallery(props) {
 										<p className='counter'>{slideIndex + 1} / {props.pictures.length}</p>
 									</div>
 									<img
-										className='arrow_next'
+										className='arrow-next'
 										src={arrownext}
 										alt="next visual"
 										onClick={nextSlide}

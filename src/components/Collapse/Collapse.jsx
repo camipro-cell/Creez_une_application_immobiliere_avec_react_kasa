@@ -11,19 +11,19 @@ function Collapse(props) {
       setIsOpen(!isOpen);
     };
    
-    return (
-        <div className='collapse_drop_down_list'>
-          <h3 onClick={handleClick}>
-            {props.title}
-            <img className={props.open !== undefined ? props.open ? 'arrow arrow_to_open': 'arrow arrow_to_close': isOpen? 'arrow arrow_to_open': 'arrow arrow_to_close'}
-              src={arrowopen}
-              alt="show content"
-            />
-          </h3>
-          {isOpen && <div className='content_in_collapse'>{props.content}</div>}
-        </div>
-    );
-  };
+  return (
+      <div className='collapse-drop-down-list'>
+        <h3 onClick={handleClick}>
+          {props.title}
+          <img className={props.open !== undefined ? props.open ? 'arrow arrow-to-open': 'arrow arrow-to-close': isOpen? 'arrow arrow-to-close': 'arrow arrow-to-open'}
+            src={arrowopen}
+            alt="show content"
+          />
+        </h3>
+        {isOpen && <div className='content-in-collapse'>{props.content}</div>}
+      </div>
+  );
+};
     
 export default Collapse;
     

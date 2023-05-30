@@ -7,12 +7,12 @@ function Header() {
     const location = useLocation();
     return ( 
         <header>
-            <div className='header_style'>
+            <div className='header-style'>
                 <h1><Link to="/"><img src={logo} alt="Logo Kasa" title="Logo Kasa" /></Link></h1>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/" className={location.pathname === '/' ? 'active space_nav_link_home' : ' space_nav_link_home'}>
+                            <Link to="/" className={location.pathname === '/' ? 'active space-nav-link-home' : ' space-nav-link-home'}>
                                 Accueil
                             </Link>
                         </li>

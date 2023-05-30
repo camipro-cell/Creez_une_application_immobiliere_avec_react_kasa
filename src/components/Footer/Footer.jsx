@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return ( 
         <footer>
-            <div className='footer_style'>
+            <div className='footer-style'>
                 <Link to={'/'}>
                     <div><img src={logo} alt="Logo Kasa" title="Logo Kasa" /></div>
                 </Link>    
