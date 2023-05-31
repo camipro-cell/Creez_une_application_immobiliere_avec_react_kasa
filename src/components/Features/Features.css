@@ -77,13 +77,20 @@
     padding-left: 0;
 }
 
+/* Breakpoint */
 @media screen and (max-width: 1100px) {
-    .informations-of-lodging h2 {
+    .lodging-title-in-lodging-page {
       width: 90%;
     }
 }
 
+/* Responsive mobile */
 @media screen and (max-width: 767px) {
+    .informations-of-lodging {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+    }
     .lodging-title-in-lodging-page {
         padding-top: 15px;
         font-size: 18px;
@@ -92,32 +99,6 @@
     .location-of-lodging {
         font-size: 14px;
         line-height: 19px;
-    }
-    .stars-of-lodging {
-        justify-content: flex-start;
-        margin-top: -25px;
-    }
-    .stars-of-lodging img {
-        padding-left: 7px;
-        padding-bottom: 30px;
-        width: 13px;
-        height: 13px;
-    }
-    .informations-of-lodging {
-        display: flex;
-        flex-direction: column;
-        justify-content: initial;
-    }
-    .host-informations {
-        padding: 0;
-    }
-    .host-informations img {
-        width: 32px;
-        height: 32px;
-    }
-    .host-informations p {
-        font-size: 12px;
-        line-height: 17px;
     }
     .button-tag-style {
         padding-top: 10px;
@@ -135,6 +116,27 @@
         margin-right: 10px;
         padding: 0;
         text-align: center;
+    }
+    .host-informations {
+        padding: 0;
+    }
+    .host-informations img {
+        width: 32px;
+        height: 32px;
+    }
+    .host-informations p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .stars-of-lodging {
+        justify-content: flex-start;
+        margin-top: -25px;
+    }
+    .stars-of-lodging img {
+        padding-left: 7px;
+        padding-bottom: 30px;
+        width: 13px;
+        height: 13px;
     }
 }
 

@@ -3,7 +3,7 @@ import './Cards.css';
 import { Link } from 'react-router-dom';
 
 function Cards(props) {
-    return (
+   return (
             <article className='cards-in-home-page'>
                 <Link to={`/logement/${props.id}`}>
                     <img src={props.cover} alt={props.title} title={props.title} />

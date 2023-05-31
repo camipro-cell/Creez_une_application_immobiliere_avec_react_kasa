@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Lodging from './pages/Lodging/Lodging';
+import About from './pages/About';
+import Lodging from './pages/Lodging';
 import Error from './pages/404/404';
 import Header from "./components/Header/Header";
 import Footer from './components/Footer/Footer';

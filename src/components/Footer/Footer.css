@@ -22,6 +22,7 @@
     line-height: 34px;
 }
 
+/* Responsive mobile */
 @media screen and (max-width: 767px) {
     .footer-style p {
         font-size: 12px;

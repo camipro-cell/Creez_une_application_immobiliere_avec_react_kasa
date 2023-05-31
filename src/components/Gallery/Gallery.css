@@ -53,6 +53,7 @@
     line-height: 25px;
 }
 
+/* Responsive mobile */
 @media screen and (max-width: 767px) {
     .slider {
        height: 255px;
@@ -77,5 +78,4 @@
     .counter {
         display: none;
     }
-    
 }

@@ -15,7 +15,7 @@ function Collapse(props) {
       <div className='collapse-drop-down-list'>
         <h3 onClick={handleClick}>
           {props.title}
-          <img className={props.open !== undefined ? props.open ? 'arrow arrow-to-open': 'arrow arrow-to-close': isOpen? 'arrow arrow-to-close': 'arrow arrow-to-open'}
+          <img className={props.open !== undefined ? props.open ? 'arrow arrow-to-close': 'arrow arrow-to-open': isOpen? 'arrow arrow-to-close': 'arrow arrow-to-open'}
             src={arrowopen}
             alt="show content"
           />

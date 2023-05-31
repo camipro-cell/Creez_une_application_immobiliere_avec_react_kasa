@@ -1,8 +1,3 @@
-.banner-style-in-home-page {
-    padding-top: 70px;
-    padding-bottom: 43px;
-}
-
 /* CSS for placing all lodgings cards in home page */
 .lodging-list {
     display: flex;
@@ -14,23 +9,15 @@
     padding: 60px 20px;
 }
 
+/* Responsive tablet */
 @media screen and (max-width: 991px) {
     .lodging-list {
        padding: 5px 5px;
     }
 }
 
+/* Responsive mobile */
 @media screen and (max-width: 767px) {
-    .banner-style-in-home-page {
-        padding-top: 16px;
-        padding-bottom: 22px;
-    }
-    .banner-style-in-home-page .banner-style {
-        height: 111px;
-    }
-    .banner-style-in-home-page .banner-style img {
-        border-radius: 10px;
-    }
     .lodging-list {
         display: flex;
         flex-direction: column;

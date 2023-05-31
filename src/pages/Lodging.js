@@ -1,16 +1,15 @@
 import React from 'react';
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react"
-import './Lodging.css';
-import Collapse from '../../components/Collapse/Collapse';
-import Gallery from '../../components/Gallery/Gallery';
-import redstar from '../../assets/redstar.png';
-import greystar from '../../assets/greystar.png';
-import Features from '../../components/Features/Features';
+import Collapse from '../components/Collapse/Collapse';
+import Gallery from '../components/Gallery/Gallery';
+import redstar from '../assets/redstar.png';
+import greystar from '../assets/greystar.png';
+import Features from '../components/Features/Features';
 
 function Lodging() {
 	
-	/* Extract the URL parameter ID value named 'id' from the data.js file */
+	// Extract the URL parameter ID value named 'id' from the lodgings.json file 
 	const idLodging = useParams('id').id;
 	const navigate = useNavigate();
 
@@ -65,32 +64,36 @@ function Lodging() {
 							</div>
 						</section>
 						<section>
-							<Features
-								title={lodging.title}
-								location={lodging.location}
-								tag={lodging.tags}
-								host={
-										<>
-								  			{lodging.host.name.split(' ')[0]}<br />
-								  			{lodging.host.name.split(' ')[1]}
-										</>
-							  		}
-								picture={lodging.host.picture} 
-								rating={renderStars()}
-							/>
+								<Features
+									title={lodging.title}
+									location={lodging.location}
+									tag={lodging.tags}
+									host={
+											<span>
+								  				{lodging.host.name.split(' ')[0]}<br />
+								  				{lodging.host.name.split(' ')[1]}
+											</span>
+							  			}
+									picture={lodging.host.picture} 
+									rating={renderStars()}
+								/>
 							<div className='style-collapse-in-lodging-page'>
-								<Collapse 
-									title={'Description'}
-									content={lodging.description}
-								/>
-								<Collapse 
-									title={'Équipements'}
-									content={lodging.equipments && lodging.equipments.length > 0 && lodging.equipments.map((equipment, index) => (
-												<div className='details-equipments' key={index}>{equipment}</div>
+								<div className='collapse-in-lodging'>
+									<Collapse 
+										title={'Description'}
+										content={lodging.description}
+									/>
+								</div>
+								<div className='collapse-in-lodging'>
+									<Collapse
+										title={'Équipements'}
+										content={lodging.equipments && lodging.equipments.length > 0 && lodging.equipments.map((equipment, index) => (
+													<div className='details-equipments' key={index}>{equipment}</div>
+												)
 											)
-										)
-									}
-								/>
+										}
+									/>
+								</div>
 							</div>
 						</section>
 					</div>

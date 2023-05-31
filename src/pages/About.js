@@ -1,9 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import './About.css';
-import image from '../../assets/imgbannerabout.png'
-import Banner from '../../components/Banner/Banner';
-import Collapse from '../../components/Collapse/Collapse';
+import image from '../assets/imgbannerabout.png'
+import Banner from '../components/Banner/Banner';
+import Collapse from '../components/Collapse/Collapse';
 
 function About() {
 
