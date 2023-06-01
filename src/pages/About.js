@@ -10,22 +10,22 @@ function About() {
 
 	useEffect(() => {
 		fetch("http://localhost:3000/about.json")
-		.then(function(response) {
-			return response.json()
-		})
-		.then(function(json) {
-			setAboutData(json);
-		})
-		.catch(function(error) {
-			console.log(error);
-		});
+			.then(function (response) {
+				return response.json()
+			})
+			.then(function (json) {
+				setAboutData(json);
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
 	}, []);
 
 	return (
 		<main>
 			<section>
 				<div className='banner-style-in-about-page'>
-					<Banner 
+					<Banner
 						image={image}
 					/>
 				</div>
