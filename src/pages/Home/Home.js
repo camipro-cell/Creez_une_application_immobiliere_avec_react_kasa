@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import './Home.css'
 import Banner from "../../components/Banner/Banner";
 import image from '../../assets/imgbannerhome.png';
-import Cards from '../../components/Cards/Cards';
+import Card from '../../components/Cards/Cards';
 
 function Home() {
-    const [lodgings, setLodgings] = useState([]);
+	const [lodgings, setLodgings] = useState([]);
 
 	useEffect(() => {
 		fetch("http://localhost:3000/lodgings.json")
@@ -20,32 +20,31 @@ function Home() {
 			console.log(error);
 		});
 	}, []);
-    
-    return (
-    	<main>
-        	<section>
+
+	return (
+		<main>
+			<section>
 				<div className='banner-style-in-home-page'>
-            		<Banner 
-            			title={'Chez vous, partout et ailleurs'}
-            			image={image}
-            		/>
+					<Banner
+						title={'Chez vous, partout et ailleurs'}
+						image={image}
+					/>
 				</div>
-        	</section>
-        	<section>
-            	<div className="lodging-list">
-                	{lodgings && lodgings.length > 0 && lodgings.map((lodging) =>
-				        	<Cards
-					        	key={lodging.id}
-					        	id={lodging.id}
-					        	title={lodging.title}
-					        	cover={lodging.cover}
-				        	/>
-			        	)
-                	}
-            	</div>
 			</section>
-    	</main>   
-    ); 
+			<section>
+				<div className="lodging-list">
+					{lodgings && lodgings.length > 0 && lodgings.map((lodging) =>
+							<Card
+								key={lodging.id}
+								id={lodging.id}
+								title={lodging.title}
+								cover={lodging.cover}
+							/>
+						)}
+				</div>
+			</section>
+		</main>
+	);
 };
 
 export default Home;

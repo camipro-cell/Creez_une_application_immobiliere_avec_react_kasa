@@ -18,7 +18,6 @@ function Lodging() {
 	useEffect(() => {
 		fetch("http://localhost:3000/lodgings.json")
 		.then(function(response) {
-			console.log(response)
 			return response.json()
 		})
 		.then(function(json) {
@@ -69,11 +68,11 @@ function Lodging() {
 									location={lodging.location}
 									tag={lodging.tags}
 									host={
-											<span>
-								  				{lodging.host.name.split(' ')[0]}<br />
-								  				{lodging.host.name.split(' ')[1]}
-											</span>
-							  			}
+										<span>
+											{lodging.host.name.split(' ')[0]}<br />
+											{lodging.host.name.split(' ')[1]}
+										</span>
+							  	}
 									picture={lodging.host.picture} 
 									rating={renderStars()}
 								/>
@@ -88,17 +87,14 @@ function Lodging() {
 									<Collapse
 										title={'Équipements'}
 										content={lodging.equipments && lodging.equipments.length > 0 && lodging.equipments.map((equipment, index) => (
-													<div className='details-equipments' key={index}>{equipment}</div>
-												)
-											)
-										}
+											<div className='details-equipments' key={index}>{equipment}</div>
+										))}
 									/>
 								</div>
 							</div>
 						</section>
 					</div>
-				)
-			}
+				)}
 		</main>
 	);
 };

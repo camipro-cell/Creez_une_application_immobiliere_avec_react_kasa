@@ -16,7 +16,7 @@ main {
 }
 
 /* Breakpoint */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   main {
       padding: 0 50px;
   }

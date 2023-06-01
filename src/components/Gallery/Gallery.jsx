@@ -4,7 +4,6 @@ import { useState } from "react";
 import arrowprevious from '../../assets/arrowprevious.png';
 import arrownext from '../../assets/arrownext.png'
 
-
 function Gallery(props) {
 
 	/* Setting thisIndex status to 0 */
@@ -30,30 +29,28 @@ function Gallery(props) {
 				<div key={index}>
 					<img className={(index === slideIndex) ? `slider-item slider-item-${index} slider-item-show` : `slider-item slider-item-${index}`} src={picture} alt={props.title} title={props.title}/>
 					{props.pictures.length > 1 && (
-							<div>
-								<div className='arrow-position-to-switch'>
-									<img
-										className='arrow-previous'
-										src={arrowprevious}
-										alt="previous visual"
-										onClick={prevSlide}
-									/>
-									<div>
-										<p className='counter'>{slideIndex + 1} / {props.pictures.length}</p>
-									</div>
-									<img
-										className='arrow-next'
-										src={arrownext}
-										alt="next visual"
-										onClick={nextSlide}
-									/>
+						<div>
+							<div className='arrow-position-to-switch'>
+								<img
+									className='arrow-previous'
+									src={arrowprevious}
+									alt="previous visual"
+									onClick={prevSlide}
+								/>
+								<div>
+									<p className='counter'>{slideIndex + 1} / {props.pictures.length}</p>
 								</div>
+								<img
+									className='arrow-next'
+									src={arrownext}
+									alt="next visual"
+									onClick={nextSlide}
+								/>
 							</div>
-					 	)
-					}
+						</div>
+					)}
 				</div>
-			   )
-			}
+			)}
 		</div>
 	);
 };

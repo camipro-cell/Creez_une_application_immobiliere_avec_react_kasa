@@ -12,7 +12,7 @@
 /* Responsive tablet */
 @media screen and (max-width: 991px) {
     .lodging-list {
-       padding: 5px 5px;
+       padding: 10px 5px;
     }
 }
 

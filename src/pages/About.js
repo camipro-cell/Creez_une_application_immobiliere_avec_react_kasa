@@ -11,11 +11,9 @@ function About() {
 	useEffect(() => {
 		fetch("http://localhost:3000/about.json")
 		.then(function(response) {
-			console.log(response)
 			return response.json()
 		})
 		.then(function(json) {
-			console.log(json);
 			setAboutData(json);
 		})
 		.catch(function(error) {
