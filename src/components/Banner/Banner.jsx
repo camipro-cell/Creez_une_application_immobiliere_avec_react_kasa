@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css';
 
+// Banner component declaration with a function 
 function Banner(props) {
   	return (
 		<div className='banner-style'>

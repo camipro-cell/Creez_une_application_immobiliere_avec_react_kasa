@@ -1,6 +1,7 @@
 import React from 'react';
 import './Features.css';
 
+// Features component declaration with a function
 function Features(props) {
 	return (
 		<div className='informations-of-lodging'>
@@ -8,6 +9,7 @@ function Features(props) {
 				<h2 className='lodging-title-in-lodging-page'>{props.title}</h2>
 				<p className='location-of-lodging'>{props.location}</p>
 				<div className='button-tag-style'>
+					{/* Using the map method on the props.tag array to iterate on each tag element and generate buttons */}
 					{props.tag && props.tag.length > 0 && props.tag.map((tag, index) =>
 						<button key={index}>{tag}</button>
 					)}

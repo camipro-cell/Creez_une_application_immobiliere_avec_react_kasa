@@ -4,30 +4,29 @@ import { useState } from "react";
 import arrowprevious from '../../assets/arrowprevious.png';
 import arrownext from '../../assets/arrownext.png'
 
+// Gallery component declaration with a function 
 function Gallery(props) {
 
-	/* Setting thisIndex status to 0 */
+	// Definition of the local state of `slideIndex` to 0 using the useState hook. 
 	const [slideIndex, setSlideIndex] = useState(0);
 
-	/* If index is equal to 0,
-	then we return to the last image when clicking on previous arrow.
-	Otherwise we return at index of the previous image. */
+	// Declaration of a function that will be used to move to the previous image in the Gallery component.
 	const prevSlide = () => {
 		setSlideIndex(slideIndex === 0 ? props.pictures.length - 1 : slideIndex - 1);
 	};
 
-	/* If index is equal to index of the last image,
-	then we return to the first image  when clicking on next arrow.
-	Otherwise we return at index of the next image. */
+	// Declaration of a function that will be used to move to the next image in the Gallery component.
 	const nextSlide = () => {
 		setSlideIndex(slideIndex === props.pictures.length - 1 ? 0 : slideIndex + 1);
 	};
 
 	return (
 		<div className="slider">
+			{/* Using the map method on the props.pictures array to iterate on each picture element */}
 			{props.pictures && props.pictures.length > 0 && props.pictures.map((picture, index) => 
 				<div key={index}>
 					<img className={(index === slideIndex) ? `slider-item slider-item-${index} slider-item-show` : `slider-item slider-item-${index}`} src={picture} alt={props.title} title={props.title}/>
+					{/* Check that props.pictures is well above 1 */}
 					{props.pictures.length > 1 && (
 						<div>
 							<div className='arrow-position-to-switch'>

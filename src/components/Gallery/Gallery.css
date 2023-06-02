@@ -1,6 +1,6 @@
 .slider {
 	position: relative;
-	overflow:hidden;
+	overflow: hidden;
 	height: 415px;
     border-radius: 25px;
     margin-top: 20px;
@@ -71,7 +71,6 @@
     .arrow-previous {
         padding-left: 6px;
     }
-    
     .arrow-next {
         padding-right: 6px;
     }

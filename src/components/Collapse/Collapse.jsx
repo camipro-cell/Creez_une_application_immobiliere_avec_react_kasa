@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import './Collapse.css';
 import arrowopen from '../../assets/arrowopen.png';
 
+// Collapse component declaration with a function 
 function Collapse(props) {
-
+	
+	// Definition of the local state of `is open` using the useState hook
 	const [isOpen, setIsOpen] = useState(props.open !== undefined ? props.open: false);
+	// creation of an event management function that will be called when the user clicks
 	const handleClick = () => {
 		setIsOpen(!isOpen);
 	};
