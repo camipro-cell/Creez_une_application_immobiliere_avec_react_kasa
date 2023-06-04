@@ -6,13 +6,13 @@
     flex-wrap: wrap;
     background-color: #F6F6F6;
     border-radius: 25px;
-    padding: 60px 20px;
+    padding: 56px 20px 6px 20px;
 }
 
 /* Responsive tablet */
 @media screen and (max-width: 991px) {
     .lodging-list {
-        padding: 10px 5px;
+        padding: 10px 5px 0 5px;
     }
 }
 
