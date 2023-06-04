@@ -7,7 +7,7 @@ function Collapse(props) {
 	
 	// Definition of the local state of `is open` using the useState hook
 	const [isOpen, setIsOpen] = useState(props.open !== undefined ? props.open: false);
-	// creation of an event management function that will be called when the user clicks
+	// Creation of an event management function that will update the value of isOpen when the user clicks on one of the collapses
 	const handleClick = () => {
 		setIsOpen(!isOpen);
 	};

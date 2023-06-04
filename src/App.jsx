@@ -7,7 +7,7 @@ import Error from './pages/404/404';
 import Header from "./components/Header/Header";
 import Footer from './components/Footer/Footer';
 
-// Configuring application routing with the function declaration that creates the App functional component.
+// Configuring application routing with the function declaration that creates the functional component App
 function App() {
     return ( 
     <BrowserRouter>
@@ -26,7 +26,7 @@ function App() {
             {/* Use of the Error component to display all elements of the 404 page */}
             <Route path="*" element={<Error />} /> 
         </Routes>
-             {/* Using the Footer component in all views (pages) of the application */}
+            {/* Using the Footer component in all views (pages) of the application */}
             <Footer />
     </BrowserRouter> 
     );

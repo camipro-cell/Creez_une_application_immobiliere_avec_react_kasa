@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import Collapse from '../components/Collapse/Collapse';
 import Gallery from '../components/Gallery/Gallery';
 import redstar from '../assets/redstar.png';
@@ -9,16 +9,16 @@ import Features from '../components/Features/Features';
 
 function Lodging() {
 
-	// Using the useParams hook of React Router to extract the value of the URL parameter called "id" and thus recover the value of the housing ID from the URL.
+	// Using the useParams hook of React Router to extract the value of the URL parameter called "id" and thus recover the value of the housing ID from the URL
 	const idLodging = useParams('id').id;
 
-	// Using the useNavigate hook to get the navigation function that will be used to redirect the user.
+	// Using the useNavigate hook to get the navigation function that will be used to redirect the user
 	const navigate = useNavigate();
 
-	// Using the useState hook to initialize the local lodging state with null.
+	// Using the useState hook to initialize the local state of lodging with null
 	const [lodging, setLodging] = useState(null);
 
-	// Using the useEffect hook to do a request with fetch to get the lodging data from the local JSON file (lodgings.json).
+	// Using the useEffect hook to do a request with fetch to get the lodging data from the local JSON file (lodgings.json)
 	useEffect(() => {
 		fetch("http://localhost:3000/lodgings.json")
 			.then(function (response) {
@@ -37,7 +37,7 @@ function Lodging() {
 			});
 	}, [idLodging, navigate]);
 
-	// Set the renderStars function to generate the star images corresponding to the rating assigned to each lodging.
+	// Set the renderStars function to generate the star images corresponding to the rating assigned to each lodging
 	const renderStars = () => {
 		const stars = [];
 		for (let i = 1; i <= 5; i++) {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './404.css'
+import './404.css';
 
-// Creating 404 page with the function declaration that creates the Error functional component.
+// Creating 404 page with the function declaration that creates the Error functional component
 function Error() {
 	return (
 		<main>

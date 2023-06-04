@@ -1,16 +1,16 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import image from '../assets/imgbannerabout.png'
+import image from '../assets/imgbannerabout.png';
 import Banner from '../components/Banner/Banner';
 import Collapse from '../components/Collapse/Collapse';
 
-// Creating About page with the function declaration that creates the About functional component.
+// Creating About page with the function declaration that creates the About functional component
 function About() {
 
-	// Using useState to initialize aboutData local state with an empty array.
+	// Using useState to initialize the local state of aboutData with an empty array
 	const [aboutData, setAboutData] = useState([]);
 
-	// Using the useEffect hook to do a request with fetch to get the aboutData data from the local JSON file (about.json).
+	// Using the useEffect hook to do a request with fetch to get the aboutData data from the local JSON file (about.json)
 	useEffect(() => {
 		fetch("http://localhost:3000/about.json")
 			.then(function (response) {

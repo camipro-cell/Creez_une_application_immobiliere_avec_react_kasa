@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 // Header component declaration with a function
 function Header() {
 
-	// Uses the useLocation hook provided by React Router to get the `location` object that contains information about the current URL.
+	// Uses the useLocation hook provided by React Router to get the `location` object that contains information about the current URL
 	const location = useLocation();
 	return (
 		<header>

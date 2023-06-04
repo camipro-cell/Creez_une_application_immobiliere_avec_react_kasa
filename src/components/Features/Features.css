@@ -99,10 +99,11 @@
     .location-of-lodging {
         font-size: 14px;
         line-height: 19px;
+        padding-top: 5px;
     }
     .button-tag-style {
         padding-top: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
     .button-tag-style button {
         background-color: #FF6060;
@@ -110,7 +111,7 @@
         border: none;
         color: #FFFFFF;
         font-size: 9px;
-        line-height: 20px;
+        line-height: 14px;
         width: 84px;
         height: 18px;
         margin-right: 10px;
@@ -134,7 +135,7 @@
     }
     .stars-of-lodging img {
         padding-left: 7px;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         width: 13px;
         height: 13px;
     }

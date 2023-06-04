@@ -9,7 +9,7 @@ function Features(props) {
 				<h2 className='lodging-title-in-lodging-page'>{props.title}</h2>
 				<p className='location-of-lodging'>{props.location}</p>
 				<div className='button-tag-style'>
-					{/* Using the map method on the props.tag array to iterate on each tag element and generate buttons */}
+					{/* Using the map method on the props.tag array to iterate on each tag element and create buttons corresponding */}
 					{props.tag && props.tag.length > 0 && props.tag.map((tag, index) =>
 						<button key={index}>{tag}</button>
 					)}

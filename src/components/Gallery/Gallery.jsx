@@ -2,20 +2,20 @@ import React from 'react';
 import './Gallery.css'; 
 import { useState } from "react";
 import arrowprevious from '../../assets/arrowprevious.png';
-import arrownext from '../../assets/arrownext.png'
+import arrownext from '../../assets/arrownext.png';
 
 // Gallery component declaration with a function 
 function Gallery(props) {
 
-	// Definition of the local state of `slideIndex` to 0 using the useState hook. 
+	// Definition of the local state of `slideIndex` to 0 using the useState hook
 	const [slideIndex, setSlideIndex] = useState(0);
 
-	// Declaration of a function that will be used to move to the previous image in the Gallery component.
+	// Declaration of a function that will be used to move to the previous image in the Gallery component
 	const prevSlide = () => {
 		setSlideIndex(slideIndex === 0 ? props.pictures.length - 1 : slideIndex - 1);
 	};
 
-	// Declaration of a function that will be used to move to the next image in the Gallery component.
+	// Declaration of a function that will be used to move to the next image in the Gallery component
 	const nextSlide = () => {
 		setSlideIndex(slideIndex === props.pictures.length - 1 ? 0 : slideIndex + 1);
 	};
